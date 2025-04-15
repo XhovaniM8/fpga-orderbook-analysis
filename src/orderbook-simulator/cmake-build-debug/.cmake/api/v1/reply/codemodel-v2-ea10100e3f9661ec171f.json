@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.26"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "orderbook",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "orderbook::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-orderbook-Debug-6b4857f489845c3028dd.json",
+					"name" : "orderbook",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/rougeboy/Documents/NYU/03_Spring25/financial_engineering_capstone_project/project/src/wip/fpga-orderbook-analysis/src/orderbook-simulator/cmake-build-debug",
+		"source" : "/Users/rougeboy/Documents/NYU/03_Spring25/financial_engineering_capstone_project/project/src/wip/fpga-orderbook-analysis/src/orderbook-simulator"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 5
+	}
+}

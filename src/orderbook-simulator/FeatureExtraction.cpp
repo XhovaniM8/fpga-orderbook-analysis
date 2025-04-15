@@ -4,7 +4,6 @@
 
 #include "FeatureExtraction.h"
 #include <cmath>
-#include <algorithm>
 #include <numeric>
 #include <fstream>
 #include <iostream>
@@ -323,3 +322,15 @@ void FeatureExtractor::loadFromFiles(const std::string& featuresPath, const std:
     std::cout << "Loaded " << numSequences << " sequences from " << featuresPath << std::endl;
     std::cout << "Loaded " << numLabels << " labels from " << labelsPath << std::endl;
 }
+
+void FeatureExtractor::printLabelStats() const {
+    std::map<int, int> counts;
+    for (int label : labels) counts[label]++;
+
+    int total = labels.size();
+    std::cout << "Class distribution:\n";
+    std::cout << "  Up        = " << counts[0] << " (" << (100.0 * counts[0] / total) << "%)\n";
+    std::cout << "  Down      = " << counts[1] << " (" << (100.0 * counts[1] / total) << "%)\n";
+    std::cout << "  No Change = " << counts[2] << " (" << (100.0 * counts[2] / total) << "%)\n";
+}
+

@@ -1,6 +1,21 @@
-//
-// Created by Xhovani Mali on 3/21/25.
-//
+/*
+ * Author: Xhovani Mali
+ * File: Orderbook.h
+ *
+ * Description:
+ * This module implements a simplified limit order book structure.
+ * It maintains bid and ask levels as sorted maps, and provides methods to
+ * update, clear, and query order book states at multiple price levels.
+ *
+ * Each update creates a time-stamped snapshot of the book, which includes
+ * the top bid/ask levels, spread, and mid-price. These snapshots are stored
+ * as a time-series history and can be exported for analysis or used to
+ * extract machine learning features.
+ *
+ * The order book supports real-time simulation and is designed to interact
+ * with the OrderbookSimulator and FeatureExtractor components to create
+ * labeled training data for FPGA-deployable LSTM networks.
+ */
 
 #ifndef ORDERBOOK_ORDERBOOK_H
 #define ORDERBOOK_ORDERBOOK_H

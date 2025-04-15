@@ -1,0 +1,87 @@
+# OS/Editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# Build artifacts
+/build/
+/bin/
+/obj/
+/out/
+/*.log
+*.o
+*.so
+*.a
+*.dll
+*.exe
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+
+# Vivado / Vitis
+*.jou
+*.str
+*.xpr
+*.xpa
+*.runs/
+*.srcs/
+*.cache/
+*.hw/
+*.sdk/
+*.ip_user_files/
+*.sim/
+*.ipynb_checkpoints/
+webtalk.log
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+*.venv/
+*.env/
+.env
+.venv
+
+# Jupyter
+.ipynb_checkpoints/
+
+# FPGA AI tools
+*.onnx
+*.tflite
+*.xmodel
+*.hwh
+*.bit
+*.hdf
+*.pb
+*.xclbin
+
+# Data files
+*.bin
+*.csv
+*.npy
+*.pkl
+
+# Logs
+*.log
+*.txt
+
+# IDEs
+.vscode/
+.idea/
+*.code-workspace
+
+# FINN / Brevitas artifacts
+finn-build/
+finn-temp/
+finn-examples/
+
+# Backup
+*~
+
