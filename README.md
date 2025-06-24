@@ -10,7 +10,7 @@ Developed for the Financial and Risk Engineering Capstone at NYU Tandon.
 
 ---
 
-## 🚧 Project Status
+## Project Status
 
 **Actively in development.**
 
