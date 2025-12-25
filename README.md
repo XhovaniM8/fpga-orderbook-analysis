@@ -1,5 +1,7 @@
 # Real-Time Market Behavior Classification with Deep Learning on FPGA Hardware
 
+note: will return back to this sometime soon in 2026
+
 NYU Financial & Risk Engineering Capstone Project
 
 This repository implements a system for analyzing financial market data in real-time using LSTM neural networks deployed on FPGA hardware. The goal is to detect market behaviors like price manipulation and liquidity changes fast enough to be useful in high-frequency trading environments.
