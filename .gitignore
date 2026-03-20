@@ -1,32 +1,46 @@
-# OS/Editor files
+# OS
 .DS_Store
 Thumbs.db
-*.swp
-*.swo
-*.bak
-*.tmp
 
-# Build artifacts
-/build/
-/bin/
-/obj/
-/out/
-/*.log
-*.o
-*.so
-*.a
-*.dll
-*.exe
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.venv/
+.env
+venv/
 
-# CMake
-CMakeFiles/
-CMakeCache.txt
-Makefile
-cmake_install.cmake
+# Jupyter
+.ipynb_checkpoints/
 
-# Vivado / Vitis
+# Data — keep zip archives, ignore extracted/processed files
+data/processed/
+data/raw/*.csv
+*.bin
+*.npy
+*.pkl
+
+# Results — keep figures, ignore model checkpoints and logs
+results/models/
+results/logs/
+*.log
+
+# FPGA / HLS artifacts
+*.onnx
+*.tflite
+*.xmodel
+*.hwh
+*.bit
+*.hdf
+*.pb
+*.xclbin
 *.jou
 *.str
+finn-build/
+finn-temp/
+
+# Vivado / Vitis project files (large, regenerable)
 *.xpr
 *.xpa
 *.runs/
@@ -36,52 +50,52 @@ cmake_install.cmake
 *.sdk/
 *.ip_user_files/
 *.sim/
-*.ipynb_checkpoints/
-webtalk.log
+hls4ml_prj/
+vivado_hls_prj/
 
-# Python
-__pycache__/
-*.py[cod]
-*.pyo
-*.egg-info/
-*.venv/
-*.env/
-.env
-.venv
-
-# Jupyter
-.ipynb_checkpoints/
-
-# FPGA AI tools
-*.onnx
-*.tflite
-*.xmodel
-*.hwh
-*.bit
-*.hdf
-*.pb
-*.xclbin
-
-# Data files
-*.bin
-*.csv
-*.npy
-*.pkl
-
-# Logs
-*.log
-*.txt
+# CMake / C++ build
+cmake-build-debug/
+cmake-build-release/
+CMakeFiles/
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+*.o
+*.so
+*.a
+*.dll
+*.exe
+build/
+bin/
 
 # IDEs
 .vscode/
 .idea/
 *.code-workspace
-
-# FINN / Brevitas artifacts
-finn-build/
-finn-temp/
-finn-examples/
+*.swp
+*.swo
 
 # Backup
 *~
+*.bak
+*.tmp
 
+# LaTeX build artifacts
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.log
+paper/*.out
+paper/*.toc
+paper/*.fls
+paper/*.fdb_latexmk
+
+# Synthetic data (gitignored, regenerable)
+data/synthetic/
+
+# Archive (legacy code, not in pipeline)
+src/model/archive/
+
+# Claude Code / AI tooling artifacts
+.claude/
+.venv/
