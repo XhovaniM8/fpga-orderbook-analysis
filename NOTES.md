@@ -1,7 +1,5 @@
 # Working Notes
 
-> Claude's scratch file — tracking progress, decisions, open questions.
-
 ## Project Goal
 IEEE CIFEr 2026 paper. Deadline: May 15, 2026.
 Pivot from "spoofing detection on FPGA with synthetic data" → "real-time order flow regime classification via quantized LSTM on FPGA, validated on real NASDAQ LOB data."
